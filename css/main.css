@@ -1,0 +1,166 @@
+/*rest*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos del header*/
+.header-home {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #FFF5E4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "h1 ul"; }
+  .header-home h1 {
+    grid-area: h1;
+    font-size: 2.8rem;
+    display: flex; }
+  .header-home ul {
+    grid-area: ul;
+    font-size: 1rem;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly; }
+  .header-home li {
+    list-style: none; }
+  .header-home li:hover {
+    background-color: #E1CEB5;
+    transform: scale(0.9);
+    box-shadow: 1px 1px 3px black; }
+  .header-home a {
+    text-decoration: none;
+    color: black; }
+  .header-home a:hover {
+    color: black !important; }
+  .header-home .navbar-brand {
+    font-size: 2.8rem;
+    margin-right: 40%; }
+
+.header {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #FFF5E4;
+  display: flex;
+  justify-content: space-around; }
+  .header h1 {
+    font-size: 2.8rem; }
+    .header h1 a {
+      list-style: none;
+      text-decoration: none;
+      color: black; }
+  .header ul {
+    display: flex;
+    font-size: 1rem;
+    margin-top: 20px;
+    gap: 5px; }
+    .header ul li {
+      list-style: none; }
+      .header ul li a {
+        text-decoration: none;
+        color: black; }
+      .header ul li a:hover {
+        color: black !important; }
+  .header li:hover {
+    background-color: #E1CEB5;
+    transform: scale(0.9);
+    box-shadow: 1px 1px 3px black; }
+
+/*estilos carrusel*/
+.slide {
+  margin-top: 10px; }
+  .slide img {
+    height: 65vh; }
+
+/*estilos del body*/
+.body {
+  background-color: #FFE3E1; }
+
+.destacado h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: left; }
+
+/*estilos del main*/
+.main-home {
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 8px 12px black; }
+
+main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  grid-template-rows: 30fr 30fr 30fr;
+  justify-content: center; }
+  main .card {
+    display: grid;
+    justify-content: start;
+    gap: 5px;
+    margin-bottom: 10px;
+    background-color: #FFF5E4;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  main .card-img-top {
+    height: 19rem; }
+  main .card-text {
+    font-weight: bold; }
+  main .card-cuotas {
+    font-size: 0.8rem;
+    color: red; }
+  main .card:hover {
+    transform: scale(1.1); }
+
+/*estilos del footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #FFF5E4; }
+  footer h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem; }
+  footer .logo {
+    cursor: pointer;
+    margin-top: 10px;
+    height: 20px; }
+  footer .derechos {
+    margin-top: 30px; }
+
+@media (max-width: 555px) {
+  .header-home {
+    display: flex;
+    flex-direction: column; }
+    .header-home ul {
+      margin-top: 3px; }
+  .header {
+    display: flex;
+    flex-direction: column; }
+    .header ul {
+      margin-top: 3px; }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #FFF5E4; }
+    footer h3 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: footer-mq; }
+    footer .logo {
+      cursor: pointer;
+      margin-top: 10px;
+      height: 20px; }
+    footer .derechos {
+      font-size: footer-mq;
+      margin-top: 30px; } }

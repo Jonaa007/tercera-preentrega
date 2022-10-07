@@ -1,0 +1,10 @@
+@mixin fuente{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+@mixin cuotas{
+    font-size: 0.8rem;
+    color: red;
+}
+@mixin img {
+    height: 19rem;
+}
